@@ -6,7 +6,7 @@ function Photo(props)
     return <figure className="figure">
             <img className="photo" src={post.imageLink} alt={post.description}></img>
             <figcaption><p> {post.description}</p></figcaption>
-            <div className="button-container"><button className="remove-button">Remove</button></div>
+            <div className="button-container"><button className="remove-button" onClick= {()=>{props.onRemovePhoto(post)}}>Remove</button></div>
            
         </figure>;
 }
